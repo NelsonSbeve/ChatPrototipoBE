@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ElfVbott0lg=",
+  "success": true,
+  "projectFilePath": "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.API\\ChatPrototipo.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\naguiar\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.2\\microsoft.aspnetcore.openapi.9.0.2.nupkg.sha512",
+    "C:\\Users\\naguiar\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
