@@ -1,0 +1,12 @@
+C:\RealWork\ChatPrototipo\ChatPrototipo.Domain\bin\Release\net9.0\ChatPrototipo.Domain.deps.json
+C:\RealWork\ChatPrototipo\ChatPrototipo.Domain\bin\Release\net9.0\ChatPrototipo.Domain.dll
+C:\RealWork\ChatPrototipo\ChatPrototipo.Domain\bin\Release\net9.0\ChatPrototipo.Domain.pdb
+C:\RealWork\ChatPrototipo\ChatPrototipo.Domain\obj\Release\net9.0\ChatPrototipo.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\RealWork\ChatPrototipo\ChatPrototipo.Domain\obj\Release\net9.0\ChatPrototipo.Domain.AssemblyInfoInputs.cache
+C:\RealWork\ChatPrototipo\ChatPrototipo.Domain\obj\Release\net9.0\ChatPrototipo.Domain.AssemblyInfo.cs
+C:\RealWork\ChatPrototipo\ChatPrototipo.Domain\obj\Release\net9.0\ChatPrototipo.Domain.csproj.CoreCompileInputs.cache
+C:\RealWork\ChatPrototipo\ChatPrototipo.Domain\obj\Release\net9.0\ChatPrototipo.Domain.sourcelink.json
+C:\RealWork\ChatPrototipo\ChatPrototipo.Domain\obj\Release\net9.0\ChatPrototipo.Domain.dll
+C:\RealWork\ChatPrototipo\ChatPrototipo.Domain\obj\Release\net9.0\refint\ChatPrototipo.Domain.dll
+C:\RealWork\ChatPrototipo\ChatPrototipo.Domain\obj\Release\net9.0\ChatPrototipo.Domain.pdb
+C:\RealWork\ChatPrototipo\ChatPrototipo.Domain\obj\Release\net9.0\ref\ChatPrototipo.Domain.dll

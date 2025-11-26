@@ -1,0 +1,7 @@
+C:\RealWork\ChatPrototipo\publish\ChatPrototipo.Infrastructure.dll
+C:\RealWork\ChatPrototipo\publish\ChatPrototipo.Infrastructure.deps.json
+C:\RealWork\ChatPrototipo\publish\ChatPrototipo.Infrastructure.pdb
+C:\RealWork\ChatPrototipo\publish\ChatPrototipo.Application.dll
+C:\RealWork\ChatPrototipo\publish\ChatPrototipo.Domain.dll
+C:\RealWork\ChatPrototipo\publish\ChatPrototipo.Application.pdb
+C:\RealWork\ChatPrototipo\publish\ChatPrototipo.Domain.pdb

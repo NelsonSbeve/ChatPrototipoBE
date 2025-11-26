@@ -1,0 +1,17 @@
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\ChatPrototipo.API.exe
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\appsettings.Development.json
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\appsettings.json
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\ChatPrototipo.API.dll
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\ChatPrototipo.API.deps.json
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\ChatPrototipo.API.runtimeconfig.json
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\ChatPrototipo.API.pdb
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\Microsoft.OpenApi.dll
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\Newtonsoft.Json.dll
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\System.Net.WebSockets.WebSocketProtocol.dll
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\ChatPrototipo.Application.dll
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\ChatPrototipo.Domain.dll
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\ChatPrototipo.Infrastructure.dll
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\ChatPrototipo.Application.pdb
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\ChatPrototipo.Infrastructure.pdb
+C:\RealWork\ChatPrototipo\ChatPrototipo.API\publish\ChatPrototipo.Domain.pdb

@@ -26,7 +26,14 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Application\\ChatPrototipo.Application.csproj": {
+                "projectPath": "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Application\\ChatPrototipo.Application.csproj"
+              },
+              "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Infrastructure\\ChatPrototipo.Infrastructure.csproj": {
+                "projectPath": "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Infrastructure\\ChatPrototipo.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -39,7 +46,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -48,6 +55,14 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Core": {
+              "target": "Package",
+              "version": "[1.2.0, )"
             }
           },
           "imports": [
@@ -69,7 +84,198 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Application\\ChatPrototipo.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Application\\ChatPrototipo.Application.csproj",
+        "projectName": "ChatPrototipo.Application",
+        "projectPath": "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Application\\ChatPrototipo.Application.csproj",
+        "packagesPath": "C:\\Users\\naguiar\\.nuget\\packages\\",
+        "outputPath": "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\naguiar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://cleopatra/BSimpleCollection/_packaging/Nuget_Packages%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Domain\\ChatPrototipo.Domain.csproj": {
+                "projectPath": "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Domain\\ChatPrototipo.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Domain\\ChatPrototipo.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Domain\\ChatPrototipo.Domain.csproj",
+        "projectName": "ChatPrototipo.Domain",
+        "projectPath": "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Domain\\ChatPrototipo.Domain.csproj",
+        "packagesPath": "C:\\Users\\naguiar\\.nuget\\packages\\",
+        "outputPath": "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\naguiar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://cleopatra/BSimpleCollection/_packaging/Nuget_Packages%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Infrastructure\\ChatPrototipo.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Infrastructure\\ChatPrototipo.Infrastructure.csproj",
+        "projectName": "ChatPrototipo.Infrastructure",
+        "projectPath": "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Infrastructure\\ChatPrototipo.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\naguiar\\.nuget\\packages\\",
+        "outputPath": "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\naguiar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://cleopatra/BSimpleCollection/_packaging/Nuget_Packages%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Application\\ChatPrototipo.Application.csproj": {
+                "projectPath": "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Application\\ChatPrototipo.Application.csproj"
+              },
+              "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Domain\\ChatPrototipo.Domain.csproj": {
+                "projectPath": "C:\\RealWork\\ChatPrototipo\\ChatPrototipo.Domain\\ChatPrototipo.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
