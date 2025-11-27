@@ -38,6 +38,7 @@ public class ChatHub : Hub
                 if (RoomUsers[room].Contains(username))
                 {
                     RoomUsers[room].Remove(username);
+                    Clients.Group(room).SendAsync("UpdateOnlineUsersInRoom", RoomUsers[room].ToList());
                 }
             }
         }
@@ -53,6 +54,9 @@ public class ChatHub : Hub
             RoomUsers[room] = new HashSet<string>();
 
         RoomUsers[room].Add(username);
+
+        await Clients.Group(room).SendAsync("UpdateOnlineUsersInRoom", RoomUsers[room].ToList());
+
     }
 
     public async Task SendMessage(string message)
