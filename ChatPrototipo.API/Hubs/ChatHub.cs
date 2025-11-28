@@ -1,8 +1,10 @@
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.SignalR;
 using System.Collections.Concurrent;
 
 namespace ChatPrototipo.API.Hubs;
 
+[EnableCors]
 public class ChatHub : Hub
 {
     private static readonly HashSet<string> OnlineUsers = new();
