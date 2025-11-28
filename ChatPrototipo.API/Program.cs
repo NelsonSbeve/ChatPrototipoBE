@@ -7,14 +7,14 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
         policy.WithOrigins(
-            "http://localhost:4200",  // Local dev
-            "https://6929915c24b6860008f68e03--chatprototipo.netlify.app",  // Netlify preview
-            "https://chatprototipo.netlify.app"  // Prod
+            "http://localhost:4200",
+            "https://6929915c24b6860008f68e03--chatprototipo.netlify.app",
+            "https://chatprototipo.netlify.app"
         )
         .WithMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
         .AllowAnyHeader()
         .AllowCredentials()
-        .SetPreflightMaxAge(TimeSpan.FromMinutes(10));
+        .SetPreflightMaxAge(TimeSpan.FromMinutes(10)));
 });
 
 var app = builder.Build();
