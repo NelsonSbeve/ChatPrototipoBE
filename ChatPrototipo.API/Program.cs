@@ -13,6 +13,7 @@ builder.Services.AddCors(options =>
             "https://6929915c24b6860008f68e03--chatprototipo.netlify.app",  // Your current preview
             "https://chatprototipo.netlify.app"  // For prod/custom domain later
         )
+        .WithMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
         .AllowAnyHeader()  // Allows custom headers (e.g., Authorization)
         .AllowAnyMethod()  // GET, POST, OPTIONS for negotiation
         .AllowCredentials();  // For auth cookies if used
