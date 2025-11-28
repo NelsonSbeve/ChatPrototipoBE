@@ -17,6 +17,13 @@ builder.Services.AddCors(options =>
         .SetPreflightMaxAge(TimeSpan.FromMinutes(10)));
 });
 
+var allowedOrigins = new[]
+{
+    "http://localhost:4200",
+    "https://6929915c24b6860008f68e03--chatprototipo.netlify.app",
+    "https://chatprototipo.netlify.app"
+};
+
 var app = builder.Build();
 
 // Custom middleware for SignalR OPTIONS preflight (handles 405)
@@ -24,28 +31,40 @@ app.Use(async (context, next) =>
 {
     if (context.Request.Method == "OPTIONS")
     {
-        // Check if origin is allowed (match your policy)
         var origin = context.Request.Headers["Origin"].FirstOrDefault();
-        if (!string.IsNullOrEmpty(origin) && new[] {
-            "http://localhost:4200",
-            "https://6929915c24b6860008f68e03--chatprototipo.netlify.app",
-            "https://chatprototipo.netlify.app"
-        }.Any(o => o == origin))
+
+        if (!string.IsNullOrEmpty(origin) && allowedOrigins.Contains(origin))
         {
+            // Allow origin
             context.Response.Headers.Append("Access-Control-Allow-Origin", origin);
-            context.Response.Headers.Append("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-            context.Response.Headers.Append("Access-Control-Allow-Headers", "Content-Type, Authorization, *");
+
+            // Allow credentials
             context.Response.Headers.Append("Access-Control-Allow-Credentials", "true");
-            context.Response.Headers.Append("Access-Control-Max-Age", "600");  // 10min cache
+
+            // Allow all common methods
+            context.Response.Headers.Append("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+
+            // MIRROR BACK REQUESTED HEADERS (FIX)
+            var requestedHeaders = context.Request.Headers["Access-Control-Request-Headers"];
+            if (!string.IsNullOrEmpty(requestedHeaders))
+            {
+                context.Response.Headers.Append("Access-Control-Allow-Headers", requestedHeaders);
+            }
+            else
+            {
+                // fallback: allow all
+                context.Response.Headers.Append("Access-Control-Allow-Headers", "*");
+            }
+
+            context.Response.Headers.Append("Access-Control-Max-Age", "600");
             context.Response.StatusCode = 200;
-            context.Response.ContentLength = 0;
-            await context.Response.CompleteAsync();  // Short-circuit response
+            await context.Response.CompleteAsync();
             return;
         }
     }
-    await next();  // Continue to other middleware for non-OPTIONS
-});
 
+    await next();
+});
 app.UseCors();  // Global for other requests
 
 app.MapHub<ChatHub>("/chat").RequireCors();  // Endpoint policy
